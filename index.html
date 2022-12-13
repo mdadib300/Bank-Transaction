@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank Transaction Calculation</title>
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="bg-gray-800 text-center mx-auto w-5/6 md:w-5/6 lg:w-4/5 rounded p-2 md:p-4 lg:p-5 my-10">
+        <h1 class="text-white text-xl md:text-2xl lg:text-3xl font-bold py-5">United Bank of Adib - UBA</h1>
+        <!-- Transaction data -->
+        <h1 class="text-white text-xl md:text-2xl lg:text-3xl py-2">Transaction Data</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-1 md:gap-2 lg:gap-5">
+            <div class="bg-white rounded m-5 p-5 text-left">
+                <h1 class="text-2xl text-gray-800">Deposit</h1>
+                <h1 class="text-2xl text-gray-800">$ <span id="Deposit">00</span></h1>
+            </div>
+            <div class="bg-white rounded m-5 p-5 text-left">
+                <h1 class="text-2xl text-gray-800">Withdraw</h1>
+                <h1 class="text-2xl text-gray-800">$ <span id="Withdraw">00</span></h1>
+            </div>
+            <div class="bg-white rounded m-5 p-5 text-left">
+                <h1 class="text-2xl text-gray-800">Balance</h1>
+                <h1 class="text-2xl text-gray-800">$ <span id="Amount">500</span></h1>
+            </div>
+        </div>
+        <!-- Transaction action -->
+        <h1 class="text-white text-xl md:text-2xl lg:text-3xl py-2">Transaction</h1>
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-1">
+            <div class="bg-white rounded m-5 p-5 text-left">
+                <h1 class="text-2xl text-gray-800 mb-5">Deposit Money</h1>
+                <input id="input-deposit" class="w-9/12 rounded block mb-5 border" placeholder=" $ place your amount" type="text">
+                <button id="button-deposit" class="text-white bg-gray-800 px-7 py-2 rounded hover:bg-gray-700">Deposit</button>
+            </div>
+            <div class="bg-white rounded m-5 p-5 text-left">
+                <h1 class="text-2xl text-gray-800 mb-5">Withdraw Money</h1>
+                <input id="input-withdraw" class="w-9/12 rounded block mb-5 border" placeholder=" $ place your amount" type="text">
+                <button id="button-withdraw" class="text-white bg-gray-800 px-7 py-2 rounded hover:bg-gray-700">Withdraw</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts link -->
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/deposit.js"></script>
+    <script src="scripts/withdraw.js"></script>
+</body>
+</html>
+
+
